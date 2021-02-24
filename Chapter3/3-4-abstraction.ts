@@ -71,16 +71,6 @@
     }
   }
 
-  const maker = new CoffeeMachine(32);
-  console.log(maker);
-  maker.fillCoffeeBeans(32);
-  console.log(maker);
-
-  const maker2: CommercialCoffeeMaker = CoffeeMachine.makeMachine(32);
-  maker2.fillCoffeeBeans(32);
-  maker2.makeCoffee(2);
-  maker2.clean();
-
   class AmateurUser {
     constructor(private machine: CoffeeMaker) {
     }
@@ -100,4 +90,9 @@
       this.machine.clean();
     }
   }
+
+  const maker: CoffeeMachine = CoffeeMachine.makeMachine(32);
+  const amateur = new AmateurUser(maker);
+  const pro = new ProBarista(maker);
+
 }
