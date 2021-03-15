@@ -185,6 +185,4 @@
   //const latteMachine = new CoffeeMachine(12, cheapMilkMaker, noSugar);
   //const coldLatteMachine = new CoffeeMachine(12, coldMilkMaker, noSugar);
   const sweetLatteMachine = new CoffeeMachine(12, cheapMilkMaker, sugar);
-
-
 }
